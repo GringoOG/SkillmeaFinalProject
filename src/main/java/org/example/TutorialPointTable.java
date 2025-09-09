@@ -31,7 +31,7 @@ public class TutorialPointTable {
     @Test
     public void test(){
         driver.get("https://www.tutorialspoint.com/selenium/practice/webtables.php#");
-        driver.manage().window().setSize(new Dimension(1936, 1000));
+        driver.manage().window().setSize(new Dimension(1300, 800));
 
         String name = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/form/div[2]/table/tbody/tr[2]/td[1]")).getText();
         String lastName = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/form/div[2]/table/tbody/tr[2]/td[2]")).getText();

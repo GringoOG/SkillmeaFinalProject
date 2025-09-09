@@ -24,7 +24,7 @@ public class TutorialPointTable {
 
     @AfterEach
     public void cleanUp() {
-        //driver.close();
+        driver.close(); //u firefoxu problem, kdyz jsou oba prikazy. Nechat jen .quit
         driver.quit();
     }
 

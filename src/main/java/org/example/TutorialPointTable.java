@@ -15,6 +15,6 @@ public class TutorialPointTable {
         driver = new ChromeDriver();
 
     }
-sf sdf
+
 
 }

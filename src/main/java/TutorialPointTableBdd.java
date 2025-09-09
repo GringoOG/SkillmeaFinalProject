@@ -47,4 +47,37 @@ public class TutorialPointTableBdd {
         assertEquals(prijmeni, lastName);
 
     }
+
+    @And("vek na druhem radku bude {string}")
+    public void vekNaDruhemRadkuBude(String vek) {
+        String age = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/form/div[2]/table/tbody/tr[2]/td[3]")).getText();
+        assertEquals(vek, age);
+    }
+
+    @And("mail na druhem radku bude {string}")
+    public void mailNaDruhemRadkuBude(String mail) {
+        String email = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/form/div[2]/table/tbody/tr[2]/td[4]")).getText();
+        assertEquals(mail, email);
+
+
+    }
+
+    @And("vyplata na druhe radku bude {string}")
+    public void vyplataNaDruheRadkuBude(String vyplata) {
+        String salary = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/form/div[2]/table/tbody/tr[2]/td[5]")).getText();
+        assertEquals(vyplata, salary);
+
+    }
+
+    @And("odvetvi na druhem radku {string}")
+    public void odvetviNaDruhemRadku(String odvetvi) {
+        String department = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/form/div[2]/table/tbody/tr[2]/td[6]")).getText();
+        assertEquals(odvetvi, department);
+
+
+    }
 }
+
+
+
+
